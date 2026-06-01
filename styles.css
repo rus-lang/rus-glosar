@@ -396,6 +396,25 @@ footer {
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+
+.easter-egg-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    opacity: 0.3;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.easter-egg-img:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
 }
 
 .footer-logo {
