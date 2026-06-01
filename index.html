@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{ }Технический Глоссарий</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text">Глоссарий</span>
+                <span class="logo-bracket">}</span>
+            </div>
+            <h1 class="main-title">Технический Глоссарий</h1>
+            <p class="subtitle">Современный справочник компьютерных терминов</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="🔍 Поиск терминов..." class="search-input">
+            </div>
+        </div>
+    </header>
+
+    <nav class="filter-nav">
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">
+                <span class="filter-icon">✨</span>
+                <span class="filter-label">Все</span>
+                <span class="count">67</span>
+            </button>
+            <button class="filter-btn" data-filter="security">
+                <span class="filter-icon">🔒</span>
+                <span class="filter-label">Безопасность</span>
+                <span class="count">9</span>
+            </button>
+            <button class="filter-btn" data-filter="network">
+                <span class="filter-icon">🌐</span>
+                <span class="filter-label">Сети</span>
+                <span class="count">14</span>
+            </button>
+            <button class="filter-btn" data-filter="slang">
+                <span class="filter-icon">💬</span>
+                <span class="filter-label">Жаргон</span>
+                <span class="count">10</span>
+            </button>
+            <button class="filter-btn" data-filter="systems">
+                <span class="filter-icon">⚙️</span>
+                <span class="filter-label">Системы</span>
+                <span class="count">11</span>
+            </button>
+            <button class="filter-btn" data-filter="devops">
+                <span class="filter-icon">🚀</span>
+                <span class="filter-label">DevOps</span>
+                <span class="count">6</span>
+            </button>
+            <button class="filter-btn" data-filter="programming">
+                <span class="filter-icon">💻</span>
+                <span class="filter-label">Разработка</span>
+                <span class="count">17</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="terms-grid" id="termsGrid">
+        <!-- БЕЗОПАСНОСТЬ -->
+        <div class="term-card" data-category="security">
+            <h3>Криптография</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Наука о методах защиты информации путём преобразования данных в зашифрованный формат.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Брандмауэр</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Система защиты сети, контролирующая входящий и исходящий трафик по заданным правилам.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Вредонос</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Программное обеспечение, созданное для нанесения вреда компьютерным системам или кражи данных.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Защитник</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Программное решение для выявления, блокировки и устранения вредоносных программ.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Кодовое слово</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Уникальная последовательность знаков для идентификации и авторизации пользователя.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Двойная проверка</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Механизм безопасности, использующий два независимых способа подтверждения личности пользователя.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Подмена данных</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Атака на базу данных через внедрение вредоносных SQL-команд в пользовательский ввод.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Массовая атака</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Координированная атака множества устройств для перегрузки и выведения из строя целевого сервера.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="security">
+            <h3>Мошенничество</h3>
+            <span class="category">БЕЗОПАСНОСТЬ</span>
+            <p>Обманные действия для получения личных данных пользователей через фальшивые ресурсы.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <!-- СЕТИ -->
+        <div class="term-card" data-category="network">
+            <h3>Сетевой адрес</h3>
+            <span class="category">СЕТИ</span>
+            <p>Цифровой идентификатор устройства в компьютерной сети для маршрутизации данных.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Служба имён</h3>
+            <span class="category">СЕТИ</span>
+            <p>Система распределённых серверов для преобразования текстовых доменов в числовые адреса.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Защищённый протокол</h3>
+            <span class="category">СЕТИ</span>
+            <p>Стандарты передачи веб-данных с шифрованием для безопасного обмена информацией.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Стек протоколов</h3>
+            <span class="category">СЕТИ</span>
+            <p>Комплекс сетевых протоколов, обеспечивающих передачу данных в глобальной сети.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Частная сеть</h3>
+            <span class="category">СЕТИ</span>
+            <p>Технология создания зашифрованного туннеля для безопасной передачи данных через открытые сети.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Коммутатор</h3>
+            <span class="category">СЕТИ</span>
+            <p>Сетевое оборудование для направления пакетов данных между различными подсетями.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Сетевой порт</h3>
+            <span class="category">СЕТИ</span>
+            <p>Логический канал для разделения различных сетевых приложений на одном хосте.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Удалённый доступ</h3>
+            <span class="category">СЕТИ</span>
+            <p>Защищённый протокол для управления удалённой системой через командную строку.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Пропускная способность</h3>
+            <span class="category">СЕТИ</span>
+            <p>Максимальный объём данных, который может быть передан по каналу связи за единицу времени.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Задержка</h3>
+            <span class="category">СЕТИ</span>
+            <p>Временной интервал между отправкой сетевого пакета и получением ответа от сервера.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Физический адрес</h3>
+            <span class="category">СЕТИ</span>
+            <p>Уникальный аппаратный идентификатор сетевой карты, присвоенный производителем.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Сеть доставки</h3>
+            <span class="category">СЕТИ</span>
+            <p>Географически распределённая инфраструктура серверов для ускорения загрузки контента.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Посредник</h3>
+            <span class="category">СЕТИ</span>
+            <p>Промежуточный сервер, перенаправляющий запросы клиентов к конечным серверам.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="network">
+            <h3>Удалённое хранилище</h3>
+            <span class="category">СЕТИ</span>
+            <p>Распределённая инфраструктура серверов для хранения файлов и выполнения приложений онлайн.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <!-- ЖАРГОН -->
+        <div class="term-card" data-category="slang">
+            <h3>Отошёл</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Статус пользователя, указывающий на временное отсутствие за компьютером.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Вылет</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Аварийное прекращение работы приложения вследствие критической ошибки.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Тормоза</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Снижение производительности системы или сети, вызывающее медленную работу.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Починка</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Устранение дефекта или неполадки в программном обеспечении.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Копия</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Дублирование важных данных для возможности восстановления после сбоя.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Хранилище кода</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Централизованное место для хранения исходников с отслеживанием всех модификаций.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Глюк</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Дефект в программном коде, приводящий к некорректной работе приложения.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Старьё</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Устаревший программный код, требующий значительных усилий для поддержки.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Боевой сервер</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Производственное окружение, где система работает для конечных пользователей.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="slang">
+            <h3>Обновление</h3>
+            <span class="category">ЖАРГОН</span>
+            <p>Выпуск новой версии программы с дополнительными возможностями и исправлениями.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <!-- СИСТЕМЫ -->
+        <div class="term-card" data-category="systems">
+            <h3>Платформа</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Программный комплекс для управления ресурсами компьютера и взаимодействия с пользователем.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Базовая система</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Микропрограмма, инициализирующая аппаратные компоненты при запуске компьютера.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Вычислитель</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Главный чип компьютера, обрабатывающий команды и выполняющий вычислительные операции.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Быстрая память</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Временное хранилище данных, теряющее содержимое при отключении питания.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Эмуляция</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Создание программных копий физических компьютерных компонентов для изоляции приложений.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Структура хранения</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Метод организации и размещения файлов на дисковых накопителях.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Твердотельный диск</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Накопитель на основе флеш-памяти, обеспечивающий высокую скорость чтения и записи.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Массив дисков</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Технология комбинирования нескольких накопителей для увеличения надёжности или производительности.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Адаптер</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Программный модуль для обеспечения связи между операционной системой и оборудованием.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Буфер</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Высокоскоростная промежуточная память для ускорения доступа к часто запрашиваемым данным.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="systems">
+            <h3>Узел</h3>
+            <span class="category">СИСТЕМЫ</span>
+            <p>Компьютер повышенной мощности для обработки запросов и предоставления ресурсов клиентам.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <!-- DEVOPS -->
+        <div class="term-card" data-category="devops">
+            <h3>Контейнер</h3>
+            <span class="category">DEVOPS</span>
+            <p>Технология упаковки приложений в изолированные среды для быстрого развёртывания.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="devops">
+            <h3>Автоматизация</h3>
+            <span class="category">DEVOPS</span>
+            <p>Непрерывная интеграция и доставка кода через автоматические процессы сборки и деплоя.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="devops">
+            <h3>Наблюдение</h3>
+            <span class="category">DEVOPS</span>
+            <p>Постоянный контроль работоспособности инфраструктуры и приложений для раннего обнаружения проблем.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="devops">
+            <h3>Журналирование</h3>
+            <span class="category">DEVOPS</span>
+            <p>Систематическая фиксация событий работы приложения для анализа и отладки.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="devops">
+            <h3>Распределитель</h3>
+            <span class="category">DEVOPS</span>
+            <p>Система распределения запросов между серверами для оптимизации нагрузки и отказоустойчивости.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="devops">
+            <h3>Заплатка</h3>
+            <span class="category">DEVOPS</span>
+            <p>Срочное обновление для устранения критических ошибок или закрытия уязвимостей безопасности.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <!-- РАЗРАБОТКА -->
+        <div class="term-card" data-category="programming">
+            <h3>Интерфейс приложения</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Набор функций и правил для взаимодействия различных программных компонентов.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Ячейка памяти</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Именованное место в памяти для сохранения значений, которые могут меняться во время работы.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Процедура</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Именованный фрагмент кода для выполнения конкретной операции с возможностью повторного вызова.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Объектная модель</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Подход к программированию, построенный на использовании объектов и их взаимодействии.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Список</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Коллекция элементов одного типа, расположенных последовательно в памяти.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Последовательность действий</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Чёткий набор шагов для решения задачи за ограниченное количество операций.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Отладка</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Процесс выявления и устранения ошибок в программном коде.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Система версий</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Инструмент для отслеживания изменений в исходном коде и совместной работы.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Формат данных</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Текстовый стандарт представления структурированных данных на основе JavaScript.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Самовызов</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Техника программирования, когда функция обращается к самой себе для решения задачи.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Шаблон объекта</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Описание структуры для создания экземпляров с определёнными свойствами и поведением.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Контракт</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Спецификация методов, которые обязан реализовать класс для соблюдения соглашения.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Ошибка выполнения</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Система обработки нештатных ситуаций, возникающих во время работы программы.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Модуль</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Коллекция готовых функций и компонентов для решения распространённых задач.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Платформа разработки</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Основа приложения с готовой архитектурой и набором инструментов для разработки.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Транслятор</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Программа для преобразования исходного кода в исполняемый машинный код.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+
+        <div class="term-card" data-category="programming">
+            <h3>Исполнитель</h3>
+            <span class="category">РАЗРАБОТКА</span>
+            <p>Программа, выполняющая код последовательно без предварительной компиляции в машинный код.</p>
+            <button class="details-btn">Подробнее →</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">{</span>
+                <span class="logo-text"> Глоссарий </span>
+                <span class="logo-bracket">}</span>
+            </div>
+            <p class="footer-text">© 2026 Технический Глоссарий • Справочник для изучения компьютерной терминологии</p>
+            <p class="made-by">made by Kruzhka67</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
